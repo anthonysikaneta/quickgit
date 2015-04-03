@@ -1,0 +1,2 @@
+#!/bin/sh
+git stash show -p stash@{0}

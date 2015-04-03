@@ -1,0 +1,4 @@
+#!/bin/sh
+git init
+git commit -am "First commit."
+git status

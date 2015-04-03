@@ -1,0 +1,14 @@
+#!/bin/sh
+if [ -z "$1" ]
+  then
+    echo "No argument supplied: branch to rebase"
+else
+	git fetch --all --prune
+
+	#update master before rebase
+	git checkout master
+	git rebase origin/master
+
+	git checkout "$1"
+	git rebase origin/master
+fi

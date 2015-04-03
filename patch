@@ -1,0 +1,7 @@
+#!/bin/sh
+if [ -z "$1" ]
+  then
+    echo "No argument supplied: name of patch file"
+else
+	git format-patch master --stdout > ../"$1".patch
+fi

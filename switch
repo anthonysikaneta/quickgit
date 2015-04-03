@@ -1,0 +1,13 @@
+#!/bin/sh
+if [ -z "$1" ]
+  then
+    echo "No argument supplied: branch to switch to"
+else
+	git checkout "$1" -f
+	git pull --rebase
+	read -p "Do you want to rebase "$1"?" -n 1 -r
+	if [[ $REPLY =~ ^[Yy]$ ]]
+	then
+		git rebase origin/master
+	fi
+fi

@@ -1,0 +1,14 @@
+#!/bin/sh
+if [ -z "$1" ]
+  then
+    echo "No argument supplied: branch to delete"
+else
+	read -p "Do you want to delete the remote branch too? " -n 1 -r
+	echo    # (optional) move to a new line
+	if [[ $REPLY =~ ^[Yy]$ ]]
+	then
+		git push origin --delete "$1"
+	fi
+	git checkout master -f
+	git branch -D "$1"
+fi

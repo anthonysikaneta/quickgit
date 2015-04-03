@@ -1,0 +1,7 @@
+#!/bin/sh
+if [ -z "$1" ]
+  then
+    echo "No argument supplied: author of diff"
+else
+	git log --pretty=oneline --author="$1"
+fi
