@@ -1,0 +1,7 @@
+#!/bin/sh
+if [ -z "$1" ]
+  then
+    echo "No argument supplied: path to file or directory"
+else
+	git checkout HEAD^ "$1"
+fi

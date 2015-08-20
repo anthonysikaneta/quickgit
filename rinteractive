@@ -1,0 +1,7 @@
+#!/bin/sh
+if [ -z "$1" ]
+  then
+    echo "No argument supplied: remote branch to rebase against"
+else
+	git rebase --interactive "$1"
+fi

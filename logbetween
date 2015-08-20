@@ -1,0 +1,7 @@
+#!/bin/sh
+if [ -z "$1" ]
+  then
+    echo "No argument supplied: branch to diff against"
+else
+	git log master..."$1" --pretty=oneline
+fi

@@ -1,0 +1,7 @@
+#!/bin/sh
+if [ -z "$1" ]
+  then
+    echo "No argument supplied: file to unstage"
+else
+	git reset HEAD "$1"
+fi

@@ -1,3 +1,4 @@
 #!/bin/sh
 a
-git stash
+c
+make test

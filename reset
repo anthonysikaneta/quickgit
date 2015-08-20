@@ -1,0 +1,4 @@
+#!/bin/sh
+clean
+make init
+kickit

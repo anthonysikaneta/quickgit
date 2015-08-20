@@ -1,0 +1,7 @@
+#!/bin/sh
+if [ -z "$1" ]
+  then
+    echo "No argument supplied: file to show log of"
+else
+	git log -- "$1"
+fi

@@ -1,0 +1,8 @@
+#!/bin/sh
+array=( PLATFORM-463-submit-report-need-to-send- WEB-1310-available-spots-in-bracket-competition WEB-1402-paypal-deposit-sometimes-misses WEB-1416-modals-in-mozilla-have-drop-shadow WEB-1505-create-avatar-directive2 WEB-1521-pin-code-by-enter WEB-1576-Require-evidence-before-submitting-a-match-dispute-AngularLevel WEB-1616-tournaments-display-free-instead-of-0 WEB-1645-cash-balance-does-not-update WEB-1665-direct-load-bracket WEB-1678-implement-caching-of-tournament WEB-1729-brackets-64-tournaments-has-two WEB-1775-expired-tournament-links-delive WEB-1820-revamp-of-featured-news WEB-1826-revamp-of-report-centre-tabs )
+for var in "${array[@]}"
+do
+  echo "${var}"
+  switch $var f
+  abort
+done

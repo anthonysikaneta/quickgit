@@ -1,2 +1,7 @@
 #!/bin/sh
-git diff --cached
+if [ -z "$1" ]
+  then
+		git diff --cached
+else
+	git diff --cached "$1"
+fi

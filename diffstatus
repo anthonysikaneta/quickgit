@@ -1,0 +1,7 @@
+#!/bin/sh
+if [ -z "$1" ]
+  then
+    echo "No argument supplied: branch name"
+else
+	git diff --name-status master.."$1"
+fi

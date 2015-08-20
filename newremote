@@ -1,0 +1,7 @@
+#!/bin/sh
+if [ -z "$1" ]
+  then
+    echo "No argument supplied: name of remote branch to push to"
+else
+	git push --set-upstream origin $1
+fi

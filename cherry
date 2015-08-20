@@ -1,0 +1,7 @@
+#!/bin/sh
+if [ -z "commit id" ]
+  then
+    echo "No argument supplied: commit id"
+else
+	git cherry-pick "$1"
+fi

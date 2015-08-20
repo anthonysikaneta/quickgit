@@ -1,0 +1,3 @@
+#!/bin/sh
+zip ../modified-files.zip $(git ls-files --modified)
+cp $(git ls-files --modified) ../modified-files
